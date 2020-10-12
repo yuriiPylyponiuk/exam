@@ -99,12 +99,12 @@ window.onload = function () {
 };
 
 function country() {
-	let ul = document.createElement('ol');
+	let ol = document.createElement('ol');
     for (let i = 0; i < node.length; i++){
         let li = document.createElement('li');
         li.textContent = `Country: ${node[i].name.toUpperCase()} ---  Capital: ${node[i].capital} ` ;
-        ul.appendChild(li);
+        ol.appendChild(li);
     }
-  document.body.appendChild(ul);
+  document.body.appendChild(ol);
 }
 
